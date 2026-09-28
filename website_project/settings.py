@@ -25,7 +25,11 @@ SECRET_KEY = 'django-insecure-r=m=hu2cfh0$n0_z92hvryy1fcr@26b*dvfd(7s&+n7@6cs0kl
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "movieflix-y09h.onrender.com",
+    "localhost",
+    "127.0.0.1",
+]
 
 
 # Application definition
@@ -117,7 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
 STATIC_URL = 'static/'
-
+ALLOWED_HOSTS
 STATICFILES_DIRS = [
     BASE_DIR / 'movies' / 'static',
 ]
